@@ -10,11 +10,12 @@ struct mahasiswa{
 
 int main(){
     mahasiswa kamaluddin;
+    mahasiswa* Kamaluddin = &kamaluddin;
     
-    kamaluddin.nim = "C030324122";
-    kamaluddin.nama = "GT. M. KAMALUDDIN AKBAR";
-    kamaluddin.alamat = "HANDIL BAKTI JL.SEMANGAT DALAM";
-    kamaluddin.ipk = 4.0;
+    Kamaluddin->nim = "C030324122";
+    Kamaluddin->nama = "GT. M. KAMALUDDIN AKBAR";
+    Kamaluddin->alamat = "HANDIL BAKTI JL.SEMANGAT DALAM";
+    Kamaluddin->ipk = 4.0;
 
     cout << kamaluddin.nim<<"\n";
     cout << kamaluddin.nama<<"\n";
