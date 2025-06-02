@@ -21,3 +21,11 @@ int Full(stack *S){
 int empty(stack *S){
     return (S->Count==0);
 }
+void pop(stack *S, itemType *x){
+    if(S->Count==0)
+    cout<<"Stack masih kosong!"<<endl;
+    else{
+        --(S->Count);
+        *x = S->Item[S->Count];
+    }
+}
