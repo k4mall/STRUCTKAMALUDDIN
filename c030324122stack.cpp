@@ -1,6 +1,13 @@
 #include <iostream>>
 using namespace std;
 
-int main(){
-    
-}
+typedef int itemType;
+
+const int MAXSTACK = 10;
+
+typedef struct stack
+
+{
+    itemType Item[MAXSTACK];
+    int Count;
+}stack;
