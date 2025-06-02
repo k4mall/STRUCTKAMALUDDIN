@@ -18,3 +18,6 @@ void inisiasistack(stack *S){
 int Full(stack *S){
     return(S->Count==MAXSTACK);
 }
+int empty(stack *S){
+    return (S->Count==0);
+}
