@@ -1,4 +1,4 @@
-#include <iostream>>
+#include <iostream>
 using namespace std;
 
 typedef int itemType;
@@ -14,4 +14,7 @@ typedef struct stack
 
 void inisiasistack(stack *S){
     S->Count = 0;
+}
+int Full(stack *S){
+    return(S->Count==MAXSTACK);
 }
