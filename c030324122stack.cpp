@@ -11,3 +11,7 @@ typedef struct stack
     itemType Item[MAXSTACK];
     int Count;
 }stack;
+
+void inisiasistack(stack *S){
+    S->Count = 0;
+}
