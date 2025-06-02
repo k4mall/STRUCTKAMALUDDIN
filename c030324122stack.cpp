@@ -37,3 +37,22 @@ void push(itemType x, stack *S){
         ++(S->Count);
     }
 }
+
+int main() {
+    stack S;
+    itemType x;
+
+    inisiasistack(&S);
+
+    push(10, &S);
+    push(20, &S);
+    push(30, &S);
+
+    pop(&S, &x);
+    cout << "Data yang di-pop: " << x << endl;
+
+    pop(&S, &x);
+    cout << "Data yang di-pop: " << x << endl;
+
+    return 0;
+}
